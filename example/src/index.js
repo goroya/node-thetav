@@ -1,14 +1,15 @@
 import thetav from 'node-thetav/build/main';
-const thetaBle = thetav.ble;
+const bleApi = thetav.ble;
+const httpApi = thetav.http;
 
 (async () => {
     try {
-        // const ret = await thetaHttp.cameraSetBluetoothDevice('11111111-1111-1111-1111-111111111111');
-        await thetaBle.init();
-        await thetaBle.setAuthBluetoothDevice(
+        await httpApi.cameraSetBluetoothDevice('11111111-1111-1111-1111-111111111111');
+        await bleApi.init();
+        await bleApi.setAuthBluetoothDevice(
             '11111111-1111-1111-1111-111111111111'
         );
-        await thetaBle.setTakePicture(1);
+        await bleApi.setTakePicture(1);
     } catch (err) {
         console.error(err);
     }
