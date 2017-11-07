@@ -1,0 +1,36 @@
+{
+  "name": "node-thetav",
+  "version": "0.0.1",
+  "author": "gogoroya",
+  "license": "MIT",
+  "description": "RICOH THETA V Library",
+  "keywords": [
+    "richo",
+    "theta",
+    "theta v"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/goroya/node-thetav.git"
+  },
+  "contributors": [],
+  "main": "build/index.js",
+  "scripts": {
+    "start": "node ./build/main.js",
+    "dev": "backpack dev",
+    "build": "backpack build"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.0.2",
+    "backpack-core": "^0.4.3",
+    "eslint": "^4.10.0",
+    "eslint-config-google": "^0.9.1",
+    "eslint-plugin-babel": "^4.1.2",
+    "eslint-plugin-node": "^5.2.1"
+  },
+  "dependencies": {
+    "axios": "^0.17.0",
+    "events": "^1.1.1",
+    "noble": "^1.8.1"
+  }
+}
