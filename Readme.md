@@ -1,6 +1,6 @@
 # node-thetav
 
-Node.js Library for Richo Theta V
+Node.js Library for Ricoh Theta V
 
 ## Install
 
